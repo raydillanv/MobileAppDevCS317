@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Devweb Tomcat 9 Page</title>
+  </head>
+  <body>
+    <h3>
+      Dillan Victory's Devweb Default Tomcat 9 Page
+    </h3>
+    <p>
+      This is the default Tomcat home page. It can be found in your Linux filesystem
+      at: <code>~/DEVWEB/2023/userlets/index.html</code> or in Windows
+      at <code>Q:\2023\userlets\index.html</code>
+    </p>
+    <p>
+      Your web applets go in the <code>classes</code> directory - you need to update
+      the <code>web.xml</code> file too.
+    </p>
+    <script>
+
+
+
+        let metric = false;
+        let numericDistance = 0;
+        let s = "Distance plus km";
+        //Pop-ups
+        //var Question = prompt("How far are you from home?");
+        //window.alert(s + metric + numericDistance);
+
+        const response = confirm("Are you sure you want to read this page?");
+
+        console.log(response);
+        if (response) {
+            alert("Okay, continue!!.");
+        } else {
+            alert("Okay, bye.");
+            //window.location.href = "http://www.twitter.com";
+        }
+
+        //Use for in loops
+        //Use for of loops
+        //Use switches
+
+        function distanceBetween(){
+            const distanceRun = {"Olivia": 20, "Jack": 21.1, "Jude": 42.2};
+            answer = distanceRun.Jack-distanceRun.Olivia
+            window.alert("Total distance between Jack and Olivia was " + answer);
+        }
+
+        function distanceTotal(){
+            const distanceRun2 = {"Olivia": 20, "Jack": 21.1, "Jude": 42.2, "Chris": 32.1};
+            answer2 = 0
+            for (let person in distanceRun2){
+                answer2 += distanceRun2[person]
+            }
+            window.alert("Total distance ran by Jack, Jude, and Olivia was " + answer2);
+
+        }
+
+        /**
+         * Basic structure (parameters) => { code} e.g.
+         * (x,y)=>{return x*y;} You can omit ()for single parameter functions
+         * You can omit {}and return for single statements
+         * Arrow notation const f1 = function() { return "hello"; } or … f1 = () => "hello";
+         * const f2 = function(n) { return `Hi ${n}`;}  … f2 = n => `Hi ${n}`
+         * const f3 = function(x,y) {return x+y;}       … f3 = (x,y) => x+y;
+         */
+
+
+    </script>
+    <p>
+      A demo applet is <a href="hello">here</a>.
+    </p>
+    <p>
+      You can access other documentation, examples and a management interface
+      <a href="/gkb23204-root/">here</a>.
+    </p>
+  <p>
+      Week 1 Tasks:<br>
+
+      1. What is the total distance between Olivia and Jack?<br>
+
+      const distanceRun = {"Olivia": 20, "Jack": 21.1, "Jude": 42.2};
+
+      <button onclick= distanceBetween()>Show answer for 1</button>
+      <br>2. Output how far the team have ran in total<br>
+      const distanceRun2 = {"Olivia": 20, "Jack": 21.1, "Jude": 42.2, "Chris": 32.1};
+      <button onclick= distanceTotal()>Show answer for 2</button>
+
+  </p>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif; /* Improve readability */
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px 0; /* Add some padding */
+}
+
+main {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 90%; /* Max width to prevent overly wide elements on large screens */
+}
+
+#inputzone, #livezone, #inclinezone {
+    text-align: center; /* Center content */
+    margin-bottom: 20px; /* Space out sections */
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+button {
+    margin: 5px; /* Space out buttons */
+    padding: 10px 20px; /* Larger tap targets */
+    font-size: 1rem; /* Readable font size */
+}
+
+/* Responsive font sizes */
+h1, p {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Adjust font size based on viewport width */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        margin-left: 10px; /* Adjust margin */
+        font-size: 3vw; /* Increase font size for better readability */
+    }
+}
+
+/* Media query for orientation */
+@media (orientation: portrait) {
+    /* Adjust styles for portrait mode if necessary */
+}
+
+@media (orientation: landscape) {
+    /* Adjust styles for landscape mode if necessary */
+}
+
+#startStopButton {
+    background-color: green; /* Change the background color */
+    color: white; /* Change the text color for better contrast */
+    border: none; /* Optional: remove border */
+    border-radius: 5px; /* Optional: add rounded corners */
+    font-weight: bold; /* Optional: make the text bold */
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="madoneApp.css">
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>MadOneTemplate</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+<header style="font-weight: bold; text-align: center; font-size: 6vw;">
+    Mobile Walking Pacer
+</header>
+<main>
+    <div id="inputzone">
+        <p class="calcParagraph" onclick="sortCalculatorInput('t')" id="time">0</p>
+        <p class="calcParagraph" onclick="sortCalculatorInput('d')" id="distance">0|</p>
+        <p class="calcResult" id="pace">--</p>
+        <!--p id="testW"> Blank</p -->
+        <div id="keypad">
+            <div class="button-row">
+                <button class="calcButton" id="b7" onclick="sortCalculatorInput('7')">7</button>
+                <button class="calcButton" id="b8" onclick="sortCalculatorInput('8')">8</button>
+                <button class="calcButton" id="b9" onclick="sortCalculatorInput('9')">9</button>
+            </div>
+            <div class="button-row">
+                <button class="calcButton" id="b4" onclick="sortCalculatorInput('4')">4</button>
+                <button class="calcButton" id="b5" onclick="sortCalculatorInput('5')">5</button>
+                <button class="calcButton" id="b6" onclick="sortCalculatorInput('6')">6</button>
+            </div>
+            <div class="button-row">
+                <button class="calcButton" id="b1" onclick="sortCalculatorInput('1')">1</button>
+                <button class="calcButton" id="b2" onclick="sortCalculatorInput('2')">2</button>
+                <button class="calcButton" id="b3" onclick="sortCalculatorInput('3')">3</button>
+            </div>
+            <div class="button-row">
+                <button class="clearButton" id="bc" onclick="sortCalculatorInput('c')">c</button>
+                <button class="calcButton" id="b0" onclick="sortCalculatorInput('0')">0</button>
+                <button class="backspaceButton" id="bB" onclick="sortCalculatorInput('b')">⇦</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="livezone">
+
+        <!-- Inside the livezone div -->
+        <button id="startStopButton">Start</button>
+        <p id="liveDistance"></p>
+        <p id="averagePace"></p>
+
+
+    </div>
+    <div id="inclinezone">
+
+        <p class="inclineParagraph" id="inclinePrompt" onclick="displayIncline()" >◬ Tap to show incline ◬</p>
+
+
+    </div>
+</main>
+<footer>
+    <p id="footer1">CS317 | Dillan Victory | 2024-02-15</p>
+
+</footer>
+
+</body>
+<script type="text/javascript" src="madone.js"></script>
+</html>

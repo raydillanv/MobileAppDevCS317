@@ -1,0 +1,288 @@
+body {
+    background-color: rgba(178, 181, 225, 0.78);
+    font-family: Arial, sans-serif; /* Improve readability */
+    height: 100%; /* Full-screen height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px 0; /* Add some padding */
+}
+
+
+
+
+main {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 90%; /* Max width to prevent overly wide elements on large screens */
+    height: 100%; /* Ensure main content uses full screen height */
+}
+
+#inputzone, #livezone, #inclinezone {
+    text-align: center; /* Center content */
+    margin-bottom: 20px; /* Space out sections */
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+button {
+    margin: 5px; /* Space out buttons */
+    padding: 10px 20px; /* Larger tap targets */
+    font-size: 1rem; /* Readable font size */
+}
+
+/* Responsive font sizes */
+h1, p {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Adjust font size based on viewport width */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        margin-left: 10px; /* Adjust margin */
+        font-size: 3vw; /* Increase font size for better readability */
+    }
+
+    main {
+        padding: 5px;
+        max-width: 100%;
+    }
+}
+
+/* Media query for orientation */
+@media (orientation: portrait) {
+    /* Adjust styles for portrait mode if necessary */
+}
+
+@media (orientation: landscape) {
+    /* Adjust styles for landscape mode if necessary */
+}
+
+#startStopButton {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*Button CSS */
+.calcButton {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 3.5rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.calcButton:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .calcButton {
+        padding: 0 2.6rem;
+    }
+}
+
+
+/*Button CSS */
+.clearButton {
+    background-image: linear-gradient(92.88deg, #ff5f4b 9.16%, #ff6449 43.89%, #ff5a42 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 3.5rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.clearButton:hover {
+    box-shadow: rgba(241, 19, 19, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .clearButton {
+        padding: 0 2.6rem;
+    }
+}
+
+/*Button CSS */
+.backspaceButton {
+    background-image: linear-gradient(92.88deg, #f78155 9.16%, #fa7e3d 43.89%, #fe8337 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 3.3rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.backspaceButton:hover {
+    box-shadow: rgba(241, 137, 19, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .backspaceButton {
+        padding: 0 2.6rem;
+    }
+}
+
+
+/*Button CSS */
+.calcParagraph {
+    background-image: linear-gradient(92.88deg, #8d4bff 9.16%, #f1648b 43.89%, #ff5a42 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex; /* Add flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.calcParagraph:hover {
+    box-shadow: rgb(141, 75, 255) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .calcParagraph {
+        padding: 0 2.6rem;
+    }
+}
+
+
+/*Button CSS */
+.calcResult {
+    background-image: linear-gradient(92.88deg, #ff5f4b 9.16%, #ff6449 43.89%, #d042ff 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex; /* Add flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.calcResult:hover {
+    box-shadow: rgb(255, 35, 0) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .calcResult {
+        padding: 0 2.6rem;
+    }
+}
+
+/*Button CSS */
+.inclineParagraph {
+    background-image: linear-gradient(92.88deg, #fafc45 9.16%, #ff6449 43.89%, #d042ff 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex; /* Add flex display */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.inclineParagraph:hover {
+    box-shadow: rgba(241, 19, 19, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .inclineParagraph {
+        padding: 0 2.6rem;
+    }
+}
+
+.button-row {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center-align the buttons horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure buttons stay in one line */
+}

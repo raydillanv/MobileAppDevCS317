@@ -1,0 +1,44 @@
+
+<div class="cont">
+    <div class="calsi">
+        <h1>Calculator</h1>
+        <input type="text" id="inp" placeholder="Enter Value..." readonly="">
+        <div class="btns">
+            <button onclick="AT_add(1)">0</button>
+            <button onclick="AT_add(1)">1</button>
+            <button onclick="AT_add(2)">2</button>
+            <button onclick="AT_add(3)">3</button>
+            <button onclick="AT_add(4)">4</button>
+            <button onclick="AT_add(5)">5</button>
+            <button onclick="AT_add(6)">6</button>
+            <button onclick="AT_add(7)">7</button>
+            <button onclick="AT_add(8)">8</button>
+            <button onclick="AT_add(9)">9</button>
+            <button onclick="AT_add('+')">+</button>
+            <button onclick="AT_add('-')">-</button>
+            <button onclick="AT_add('/')">/</button>
+            <button onclick="AT_add('*')">*</button>
+        </div>
+        <button onclick="exe()">=</button>
+        <button onclick="cancel()">⌫</button>
+        <button onclick="cls()">c</button>
+    </div>
+    <script>var val=document.getElementById("inp");
+
+    function AT_add(v){
+        val.value+=v;
+    }
+
+
+    function cls(){
+        val.value="";
+    }
+
+    function exe(){
+        val.value=eval(val.value);
+    }
+
+
+    function cancel(){
+        val.value=val.value.substr(0,val.value.length-1);
+    }</script>
