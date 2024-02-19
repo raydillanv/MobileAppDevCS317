@@ -1,2 +1,2 @@
 # MobileAppDevCS317
- Course work for Mobile App Development class at Strathclyde University
+ CS317 course work at University of Strathclyde
